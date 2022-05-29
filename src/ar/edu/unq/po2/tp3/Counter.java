@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Counter {
 	
-	private ArrayList<Integer> Cuenta= new ArrayList<Integer>();
+	private ArrayList<Integer> cuenta= new ArrayList<Integer>();
 	
 	
 	public Counter() { //constructor
@@ -16,24 +16,24 @@ public class Counter {
 
 		
 	public List<Integer> getCuenta() { // mostrar /
-		return Cuenta;
+		return cuenta;
 	}
 
 
 	public void setCuenta(ArrayList<Integer> Cuenta) { // modificar
-		this.Cuenta = Cuenta;
+		this.cuenta = Cuenta;
 	}
 	
 	public void addNumero(int valor) {
-		Cuenta.add(valor);
+		cuenta.add(valor);
 	}
 
 
 	public int contadorPares () { // metodo para contar los elementos pares
 		int cant_pares=0; 
 		
-		for (int i=0; i< Cuenta.size(); i++) {
-			if(Cuenta.get(i)%2 == 0) {
+		for (int i=0; i< cuenta.size(); i++) {
+			if(cuenta.get(i)%2 == 0) {
 				cant_pares ++;
 			}
 			
@@ -45,8 +45,8 @@ public class Counter {
 	public int contadorImpares () { // metodo para contar los elementos impares
 		int cant_impares=0;
 		
-		for (int i=0; i<Cuenta.size(); i++) {
-			if(Cuenta.get(i)%2 != 0) {
+		for (int i=0; i<cuenta.size(); i++) {
+			if(cuenta.get(i)%2 != 0) {
 				cant_impares ++;
 			}
 			
@@ -57,8 +57,8 @@ public class Counter {
 	public int contadorMultiN (int n) { // metodo para contar los elementos múltiplos de un número dado
 		int cant_n=0;
 		
-		for (int i=0; i<Cuenta.size(); i++) {
-			if(Cuenta.get(i)%n == 0) {
+		for (int i=0; i<cuenta.size(); i++) {
+			if(cuenta.get(i)%n == 0) {
 				cant_n ++;
 			}
 			
