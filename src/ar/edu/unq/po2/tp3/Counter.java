@@ -20,8 +20,8 @@ public class Counter {
 	}
 
 
-	public void setCuenta(ArrayList<Integer> Cuenta) { // modificar
-		this.cuenta = Cuenta;
+	public void setCuenta(ArrayList<Integer> cuenta) { // modificar
+		this.cuenta = cuenta;
 	}
 	
 	public void addNumero(int valor) {
